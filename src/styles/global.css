@@ -1,29 +1,58 @@
-/* src/styles/global.css */
-
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 nav {
   background-color: #ffffff;
-  padding: 12px 20px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-  margin-right: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+.nav-links a {
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #007bff;
 }
 
-div {
+header {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
   padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
 }

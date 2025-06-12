@@ -1,14 +1,14 @@
-// src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
-  return (
-    <nav style={{ padding: '10px', background: '#eee' }}>
-      <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
+const Navbar = () => (
+  <nav>
+    <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>MyReactSite</div>
+    <div className="nav-links">
+      <Link to="/">Home</Link>
       <Link to="/about">About</Link>
-    </nav>
-  );
-};
+    </div>
+  </nav>
+);
 
 export default Navbar;
